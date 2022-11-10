@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./lista_tarea.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Lista de Tarea con Java<span>Script</span></h1>
+    </header>
+    <main class="contenedor__principal">
+        <section class="contenedor__insertarTask">
+            <form action="" class="formulario" id="form__crear">
+                <input type="text" class="form__control" id="crear" autofocus placeholder="Escribe la tarea" >
+                <button id="btn" class="btn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <div class="stats" id="stats_task">
+                <!-- <p>Tareas asignadas: 5 Completadas: 9 </p> -->
+            </div>
+        </section>
+        <section class="contenedor__buscarTask">
+            <form action="">
+                <input type="text"  placeholder="Buscar tarea..." id="buscarInput">
+            </form>
+            <br>
+            <ul class="list__group" id="lista__task">
+                <!-- <li id="1">
+                    <label for="">
+                        <input type="checkbox">
+                        tarea 1
+                    <label for="">
+                    <i class="fa-solid fa-trash-can"></i>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+    <script src="./lista_tarea.js"></script>
+</body>
+</html>
